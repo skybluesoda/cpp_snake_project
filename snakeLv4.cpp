@@ -225,9 +225,10 @@ int main() {
     start_color(); //색상 모드를 활성화합니다.
     init_pair(1, COLOR_BLUE, COLOR_BLACK); 
     init_pair(2, COLOR_RED, COLOR_BLACK);
+    init_pair(3, COLOR_MAGENTA, COLOR_BLACK);
 
     Map gameMap(25, 25);// 25 * 25 크기의 맵을 생성합니다. (동적 할당이므로 확장 가능)
-    Snake snake(12, 12, 5);// (12, 12) 좌표에 길이 5의 snake를 생성합니다.
+    Snake snake(12, 12, 4);// (12, 12) 좌표에 길이 5의 snake를 생성합니다.
     
     vector<Item> items;
 
